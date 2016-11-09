@@ -14,6 +14,11 @@
 		3F99AA5C1DD2B2FE006BAC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F99AA5A1DD2B2FE006BAC52 /* LaunchScreen.storyboard */; };
 		3F99AA671DD2B2FE006BAC52 /* CoCDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99AA661DD2B2FE006BAC52 /* CoCDiceTests.swift */; };
 		3F99AA721DD2B2FE006BAC52 /* CoCDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99AA711DD2B2FE006BAC52 /* CoCDiceUITests.swift */; };
+		3F99AA801DD2B614006BAC52 /* UserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F99AA7F1DD2B614006BAC52 /* UserData.storyboard */; };
+		3F99AA881DD2B78F006BAC52 /* DiceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99AA871DD2B78F006BAC52 /* DiceListTableViewController.swift */; };
+		3F99AA8D1DD2B7C0006BAC52 /* DiceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99AA8B1DD2B7C0006BAC52 /* DiceListTableViewCell.swift */; };
+		3F99AA8E1DD2B7C0006BAC52 /* DiceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F99AA8C1DD2B7C0006BAC52 /* DiceListTableViewCell.xib */; };
+		3F99AA901DD2B7E8006BAC52 /* DiceAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99AA8F1DD2B7E8006BAC52 /* DiceAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		3F99AA6D1DD2B2FE006BAC52 /* CoCDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoCDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F99AA711DD2B2FE006BAC52 /* CoCDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoCDiceUITests.swift; sourceTree = "<group>"; };
 		3F99AA731DD2B2FE006BAC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F99AA7F1DD2B614006BAC52 /* UserData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserData.storyboard; sourceTree = "<group>"; };
+		3F99AA871DD2B78F006BAC52 /* DiceListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceListTableViewController.swift; sourceTree = "<group>"; };
+		3F99AA8B1DD2B7C0006BAC52 /* DiceListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiceListTableViewCell.swift; path = ../DiceListTableViewCell.swift; sourceTree = "<group>"; };
+		3F99AA8C1DD2B7C0006BAC52 /* DiceListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiceListTableViewCell.xib; path = ../DiceListTableViewCell.xib; sourceTree = "<group>"; };
+		3F99AA8F1DD2B7E8006BAC52 /* DiceAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceAddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +107,9 @@
 		3F99AA501DD2B2FE006BAC52 /* CoCDice */ = {
 			isa = PBXGroup;
 			children = (
+				3F99AA921DD2B805006BAC52 /* UserData */,
+				3F99AA911DD2B7F0006BAC52 /* Dice */,
 				3F99AA511DD2B2FE006BAC52 /* AppDelegate.swift */,
-				3F99AA531DD2B2FE006BAC52 /* ViewController.swift */,
-				3F99AA551DD2B2FE006BAC52 /* Main.storyboard */,
 				3F99AA581DD2B2FE006BAC52 /* Assets.xcassets */,
 				3F99AA5A1DD2B2FE006BAC52 /* LaunchScreen.storyboard */,
 				3F99AA5D1DD2B2FE006BAC52 /* Info.plist */,
@@ -123,6 +133,27 @@
 				3F99AA731DD2B2FE006BAC52 /* Info.plist */,
 			);
 			path = CoCDiceUITests;
+			sourceTree = "<group>";
+		};
+		3F99AA911DD2B7F0006BAC52 /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				3F99AA531DD2B2FE006BAC52 /* ViewController.swift */,
+				3F99AA871DD2B78F006BAC52 /* DiceListTableViewController.swift */,
+				3F99AA8F1DD2B7E8006BAC52 /* DiceAddViewController.swift */,
+				3F99AA8B1DD2B7C0006BAC52 /* DiceListTableViewCell.swift */,
+				3F99AA8C1DD2B7C0006BAC52 /* DiceListTableViewCell.xib */,
+				3F99AA551DD2B2FE006BAC52 /* Main.storyboard */,
+			);
+			name = Dice;
+			sourceTree = "<group>";
+		};
+		3F99AA921DD2B805006BAC52 /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				3F99AA7F1DD2B614006BAC52 /* UserData.storyboard */,
+			);
+			name = UserData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +268,9 @@
 			files = (
 				3F99AA5C1DD2B2FE006BAC52 /* LaunchScreen.storyboard in Resources */,
 				3F99AA591DD2B2FE006BAC52 /* Assets.xcassets in Resources */,
+				3F99AA8E1DD2B7C0006BAC52 /* DiceListTableViewCell.xib in Resources */,
 				3F99AA571DD2B2FE006BAC52 /* Main.storyboard in Resources */,
+				3F99AA801DD2B614006BAC52 /* UserData.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F99AA901DD2B7E8006BAC52 /* DiceAddViewController.swift in Sources */,
 				3F99AA541DD2B2FE006BAC52 /* ViewController.swift in Sources */,
 				3F99AA521DD2B2FE006BAC52 /* AppDelegate.swift in Sources */,
+				3F99AA8D1DD2B7C0006BAC52 /* DiceListTableViewCell.swift in Sources */,
+				3F99AA881DD2B78F006BAC52 /* DiceListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +550,7 @@
 				3F99AA781DD2B2FE006BAC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F99AA791DD2B2FE006BAC52 /* Build configuration list for PBXNativeTarget "CoCDiceTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +559,7 @@
 				3F99AA7B1DD2B2FE006BAC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F99AA7C1DD2B2FE006BAC52 /* Build configuration list for PBXNativeTarget "CoCDiceUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +568,7 @@
 				3F99AA7E1DD2B2FE006BAC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
